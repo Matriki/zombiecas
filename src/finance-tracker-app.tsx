@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 import { ArrowLeft, Plus, Wallet, BarChart3, History, Target } from 'lucide-react';
 
-const ZombieFinanceApp = () => {
+const App = () => {
   const [currentScreen, setCurrentScreen] = useState('home');
   const [transactions, setTransactions] = useState([
     { id: 1, type: 'income', amount: 500, description: 'Mesada', date: '2025-05-01' },
@@ -454,4 +454,4 @@ const ZombieFinanceApp = () => {
   return null;
 };
 
-export default ZombieFinanceApp;
+export default App;
